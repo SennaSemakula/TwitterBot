@@ -15,4 +15,6 @@ QUOTES = [
     "Don't choke up on syntax. It hardly matters. Try to work on your logics and patterns.",
     "Do not repeat code: use loops or functions instead",
     "Group global variables into records, objects or structures",
+    "Throw yourself in the deep end. You'll come out stronger and more confident.",
+    "Learning to code is learning to create and innovate.",
 ]
