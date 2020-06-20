@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import os
 import tweepy
 import json
@@ -15,7 +15,7 @@ a_file = open("counter.json", "r")
 day = json.load(a_file)['day']
 a_file.close()
 
-tweet = f"{QUOTES[day]}\n"
+tweet = "{0}\n".format(QUOTES[day])
 for tag in HASH_TAGS:
     tweet += f"{tag} "
 print(tweet)
@@ -25,5 +25,5 @@ new_day = day + 1
 with open("counter.json", "w+") as f_obj:
     f_obj.write(json.dumps({"day": new_day}))
 
-# api.update_status("Testing api \n #london")
+api.update_status(tweet)
 
